@@ -1,304 +1,359 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LLAR STUDIO – Diseño de Interiores Biofílico y Decoración Sostenible. Acuarelas botánicas, velas vegetales, cerámica de arroz y kokedamas artesanales. Shaped by Nature.">
-    <meta name="keywords" content="diseño biofílico, decoración sostenible, acuarelas botánicas, velas vegetales, cerámica artesanal, kokedama, LLAR STUDIO, shaped by nature">
-    <meta name="author" content="LLAR STUDIO">
-    <meta property="og:title" content="LLAR STUDIO – Shaped by Nature">
-    <meta property="og:description" content="Diseño de Interiores Biofílico y Decoración Sostenible. Piezas únicas moldeadas por la naturaleza.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://llarstudio.com">
-    <meta property="og:image" content="https://llarstudio.com/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LLAR STUDIO – Shaped by Nature">
-    <meta name="twitter:description" content="Diseño Biofílico y Decoración Sostenible. Piezas únicas artesanales.">
-    <link rel="canonical" href="https://llarstudio.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>LLAR STUDIO – Shaped by Nature | Diseño Biofílico & Decoración Sostenible</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "LLAR STUDIO",
-            "url": "https://llarstudio.com",
-            "description": "Diseño de Interiores Biofílico y Decoración Sostenible. Shaped by Nature.",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://llarstudio.com/?s={search_term_string}",
-                "query-input": "required name=search_term_string"
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-CR66P4FWLM"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
             }
-        }
-    </script>
-</head>
-<body>
+            gtag("js", new Date());
 
-    <!-- ==================== COOKIE BANNER ==================== -->
-    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies" aria-hidden="false">
-        <div class="cookie-banner__inner">
-            <p class="cookie-banner__text" data-translate="cookie_text">
-                Utilizamos cookies propias y de terceros para mejorar tu experiencia, analizar el tráfico y facilitar pagos seguros. Puedes aceptar todas, rechazarlas o
-                <button type="button" class="cookie-banner__link" id="btn-cookies-config" data-translate="cookie_config">configurarlas</button>.
-                Más información en nuestra
-                <button type="button" class="cookie-banner__link" id="btn-cookies-policy" data-translate="cookie_policy">Política de Cookies</button>.
+            gtag("config", "G-CR66P4FWLM");
+        </script>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LLAR STUDIO — Art shaped by nature</title>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 95 C20 95 5 75 5 50 C5 25 25 5 50 5 C75 5 95 25 95 50 C95 75 80 95 50 95 Z M50 18 C32 18 18 32 18 50 C18 68 32 82 50 82 C68 82 82 68 82 50 C82 32 68 18 50 18 Z M50 30 C39 30 30 39 30 50 C30 61 39 70 50 70 C61 70 70 61 70 50 C70 39 61 30 50 30 Z' fill='%232C3136'/%3E%3C/svg%3E"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <!-- NAVEGACIÓN -->
+        <nav class="nav" id="nav" aria-label="Navegación principal">
+            <ul class="nav__list">
+                <li><a href="#obra" class="nav__link">Obra</a></li>
+                <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+                <li><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO CON SLIDESHOW DE FONDO -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <!-- Contenedor del slideshow -->
+            <div class="hero__slideshow" id="hero-slideshow" aria-hidden="true">
+                <!-- Las imágenes se cargan desde JavaScript, pero dejamos una base -->
+                <div class="hero__slide active">
+                    <img
+                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+                        alt=""
+                        loading="eager"
+                    />
+                </div>
+                <div class="hero__slide">
+                    <img
+                        src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+                        alt=""
+                        loading="lazy"
+                    />
+                </div>
+                <div class="hero__slide">
+                    <img
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+                        alt=""
+                        loading="lazy"
+                    />
+                </div>
+                <div class="hero__slide">
+                    <img
+                        src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+                        alt=""
+                        loading="lazy"
+                    />
+                </div>
+                <div class="hero__slide">
+                    <img
+                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+                        alt=""
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+
+            <!-- Contenido superpuesto -->
+            <div class="hero__content">
+                <h1 class="hero__name" id="hero-heading">Elena Soler</h1>
+                <p class="hero__tagline">
+                    Acuarelas minimalistas — la quietud del pigmento, la danza
+                    del agua
+                </p>
+            </div>
+            <div class="hero__scroll-hint" aria-hidden="true">
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section
+            class="gallery-section"
+            id="obra"
+            aria-labelledby="gallery-heading"
+        >
+            <header class="gallery-section__header">
+                <span class="section-eyebrow">Obra reciente</span>
+                <h2 class="display-xl" id="gallery-heading">Galería</h2>
+            </header>
+            <div class="gallery-grid">
+                <button
+                    class="gallery-grid__item gallery-grid__item--tall"
+                    data-reveal
+                    aria-label="Ampliar Estudio botánico I"
+                >
+                    <img
+                        src="https://picsum.photos/id/15/600/800"
+                        alt="Rama de eucalipto en acuarela"
+                        loading="lazy"
+                    />
+                    <span class="gallery-grid__label">Botánico I</span>
+                </button>
+                <button
+                    class="gallery-grid__item gallery-grid__item--wide"
+                    data-reveal
+                    aria-label="Ampliar Horizonte"
+                >
+                    <img
+                        src="https://picsum.photos/id/28/800/500"
+                        alt="Paisaje de líneas de horizonte diluidas"
+                        loading="lazy"
+                    />
+                    <span class="gallery-grid__label">Horizonte</span>
+                </button>
+                <button
+                    class="gallery-grid__item"
+                    data-reveal
+                    aria-label="Ampliar Flor I"
+                >
+                    <img
+                        src="https://picsum.photos/id/36/600/600"
+                        alt="Detalle floral monocromático"
+                        loading="lazy"
+                    />
+                    <span class="gallery-grid__label">Flor I</span>
+                </button>
+                <button
+                    class="gallery-grid__item gallery-grid__item--tall-wide"
+                    data-reveal
+                    aria-label="Ampliar Veladuras"
+                >
+                    <img
+                        src="https://picsum.photos/id/54/1000/800"
+                        alt="Composición de veladuras superpuestas"
+                        loading="lazy"
+                    />
+                    <span class="gallery-grid__label">Veladuras</span>
+                </button>
+                <button
+                    class="gallery-grid__item"
+                    data-reveal
+                    aria-label="Ampliar Niebla"
+                >
+                    <img
+                        src="https://picsum.photos/id/10/600/600"
+                        alt="Bosque en niebla — grises diluidos"
+                        loading="lazy"
+                    />
+                    <span class="gallery-grid__label">Niebla</span>
+                </button>
+                <button
+                    class="gallery-grid__item gallery-grid__item--tall"
+                    data-reveal
+                    aria-label="Ampliar Botánico II"
+                >
+                    <img
+                        src="https://picsum.photos/id/48/600/800"
+                        alt="Estudio de hoja sobre papel"
+                        loading="lazy"
+                    />
+                    <span class="gallery-grid__label">Botánico II</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+            <div class="lightbox__content">
+                <button
+                    class="lightbox__close"
+                    id="lightbox-close"
+                    aria-label="Cerrar imagen ampliada"
+                >
+                    &times;
+                </button>
+                <img class="lightbox__image" id="lightbox-img" src="" alt="" />
+            </div>
+        </div>
+
+        <!-- SOBRE MÍ -->
+        <section
+            class="about-section"
+            id="sobre-mi"
+            aria-labelledby="about-heading"
+        >
+            <div class="about-section__text" data-reveal>
+                <span class="section-eyebrow">Sobre mí</span>
+                <h2 class="display-lg" id="about-heading">
+                    El silencio del pincel
+                </h2>
+                <p class="body-base" style="margin-top: var(--spacing-sm)">
+                    Trabajo con acuarela porque no admite prisas. Cada veladura
+                    exige paciencia; cada transparencia, una decisión. Me
+                    interesa lo que queda cuando se retira todo lo accesorio:
+                    una línea, un borde de color que se desvanece, la luz
+                    atrapada en el grano del papel.
+                </p>
+                <blockquote>
+                    «Pinto lo mínimo para que respire lo esencial.»
+                </blockquote>
+                <p class="body-base">
+                    Formada en Barcelona y Kioto, mi práctica bebe del sumi-e
+                    japonés y de la tradición botánica europea. Expongo
+                    regularmente en galerías de Madrid, Lisboa y Copenhague.
+                    Cada pieza nace de la observación lenta y el respeto por el
+                    material.
+                </p>
+            </div>
+            <div class="about-section__image-wrapper" data-reveal>
+                <div class="about-section__wash-bg" aria-hidden="true"></div>
+                <img
+                    class="about-section__image"
+                    src="https://picsum.photos/id/64/600/750"
+                    alt="Elena Soler en su estudio"
+                    loading="lazy"
+                />
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section
+            class="contact-section"
+            id="contacto"
+            aria-labelledby="contact-heading"
+        >
+            <header class="contact-section__header">
+                <span class="section-eyebrow">Contacto</span>
+                <h2 class="display-lg" id="contact-heading">Hablemos</h2>
+                <p class="body-lg" style="margin-top: var(--spacing-xs)">
+                    Para consultas sobre obra disponible, encargos o
+                    colaboraciones.
+                </p>
+            </header>
+            <form
+                class="contact-form"
+                data-reveal
+                id="contact-form"
+                action="https://formsubmit.co/alxrych@gmail.com"
+                method="POST"
+            >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_next" value="#" />
+                <div class="contact-form__field">
+                    <label class="contact-form__label" for="name">Nombre</label>
+                    <input
+                        class="contact-form__input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Tu nombre"
+                    />
+                </div>
+                <div class="contact-form__field">
+                    <label class="contact-form__label" for="email"
+                        >Correo electrónico</label
+                    >
+                    <input
+                        class="contact-form__input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="tu@email.com"
+                    />
+                </div>
+                <div class="contact-form__field">
+                    <label class="contact-form__label" for="message"
+                        >Mensaje</label
+                    >
+                    <textarea
+                        class="contact-form__textarea"
+                        id="message"
+                        name="message"
+                        required
+                        placeholder="Cuéntame qué tienes en mente..."
+                    ></textarea>
+                </div>
+                <button class="contact-form__button" type="submit">
+                    Enviar mensaje
+                </button>
+                <div
+                    class="contact-form__feedback"
+                    id="form-feedback"
+                    aria-live="polite"
+                ></div>
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="footer__copyright">
+                © 2026 Elena Soler — Todos los derechos reservados
             </p>
-            <div class="cookie-banner__actions">
-                <button type="button" class="btn btn--outline btn--sm" id="btn-cookies-reject" data-translate="reject">Rechazar</button>
-                <button type="button" class="btn btn--primary btn--sm" id="btn-cookies-accept" data-translate="accept">Aceptar todas</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- ==================== HEADER / NAVIGATION ==================== -->
-    <header class="header" id="header">
-        <div class="header__inner container">
-            <a href="#hero" class="header__logo" aria-label="LLAR STUDIO – Ir al inicio">
-                <span class="header__logo-text">LLAR</span>
-                <span class="header__logo-sub">STUDIO</span>
+            <a
+                href="https://instagram.com"
+                class="footer__instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Elena Soler"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                    />
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="5"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                    />
+                    <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor" />
+                </svg>
+                <span class="footer__instagram-text"
+                    >@elena.soler.acuarelas</span
+                >
             </a>
-            <nav class="nav" id="nav" aria-label="Navegación principal">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#filosofia" class="nav__link" data-translate="nav_philosophy">Filosofía</a></li>
-                    <li class="nav__item"><a href="#coleccion" class="nav__link" data-translate="nav_collection">Colección</a></li>
-                    <li class="nav__item"><a href="#contacto" class="nav__link" data-translate="nav_contact">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="header__actions">
-                <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma" data-translate="lang_label">EN</button>
-                <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-                    <span class="nav__toggle-line"></span>
-                    <span class="nav__toggle-line"></span>
-                </button>
-            </div>
-        </div>
-    </header>
+        </footer>
 
-    <!-- ==================== MAIN CONTENT ==================== -->
-    <main>
-
-        <!-- --- HERO --- -->
-        <section class="hero" id="hero">
-            <div class="hero__inner container">
-                <div class="hero__accent-dot" aria-hidden="true"></div>
-                <h1 class="hero__title">LLAR STUDIO</h1>
-                <p class="hero__tagline">Shaped by Nature</p>
-                <p class="hero__subtitle" data-translate="hero_subtitle">Diseño biofílico · Decoración sostenible · Piezas que respiran</p>
-                <a href="#filosofia" class="hero__scroll-indicator" aria-label="Desplazarse hacia abajo">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-                </a>
-            </div>
-        </section>
-
-        <!-- --- FILOSOFÍA --- -->
-        <section class="section philosophy" id="filosofia">
-            <div class="container">
-                <div class="philosophy__grid">
-                    <div class="philosophy__text fade-in">
-                        <span class="section__label" data-translate="philosophy_label">Nuestra filosofía</span>
-                        <h2 class="section__title" data-translate="philosophy_title">Crear espacios<br>que respiran</h2>
-                        <p class="section__body" data-translate="philosophy_p1">
-                            En <strong>LLAR STUDIO</strong> creemos que los interiores deben ser una extensión del mundo natural.
-                            Trabajamos con materiales sostenibles, pigmentos botánicos, ceras vegetales y fibras vivas
-                            para dar forma a piezas que transforman cualquier espacio en un refugio sereno.
-                        </p>
-                        <p class="section__body" data-translate="philosophy_p2">
-                            Cada creación —desde una acuarela pintada a mano con pigmentos de flores hasta una kokedama
-                            esculpida con musgo vivo— nace del diálogo entre la tradición artesanal y el diseño contemporáneo.
-                        </p>
-                        <p class="section__body section__body--accent" data-translate="philosophy_accent">
-                            <em>Shaped by Nature. Moldeado por la naturaleza.</em>
-                        </p>
-                    </div>
-                    <div class="philosophy__visual fade-in" aria-hidden="true">
-                        <div class="philosophy__organic-shape"></div>
-                        <div class="philosophy__organic-shape philosophy__organic-shape--secondary"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- --- COLECCIÓN (productos + tienda unificados) --- -->
-        <section class="section collection" id="coleccion">
-            <div class="container">
-                <span class="section__label" data-translate="collection_label">Colección</span>
-                <h2 class="section__title" data-translate="collection_title">Productos artesanales</h2>
-                <div class="products__grid">
-                    <!-- Producto 1: Acuarelas -->
-                    <article class="product-card fade-in">
-                        <div class="product-card__visual">
-                            <svg class="product-card__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="38" cy="42" r="14" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
-                                <circle cx="55" cy="35" r="11" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-                                <circle cx="48" cy="55" r="9" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
-                                <path d="M22 68 Q40 55 60 70 Q75 82 85 72" stroke="currentColor" stroke-width="1" opacity="0.5" fill="none"/>
-                                <line x1="42" y1="18" x2="44" y2="32" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
-                            </svg>
-                        </div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name" data-translate="product1_name">Acuarelas Minimalistas</h3>
-                            <p class="product-card__desc" data-translate="product1_desc">Pintadas a mano con pigmentos naturales extraídos de plantas y flores. Cada pieza es única.</p>
-                            <p class="product-card__price">48 €</p>
-                            <!-- Botón de compra PayPal -->
-                            <form class="paypal-buy-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                                <input type="hidden" name="cmd" value="_xclick">
-                                <input type="hidden" name="business" value="alxrych@gmail.com">
-                                <input type="hidden" name="item_name" value="Acuarelas Minimalistas">
-                                <input type="hidden" name="amount" value="48">
-                                <input type="hidden" name="currency_code" value="EUR">
-                                <button type="submit" class="btn btn--buy" data-translate="buy_button">Comprar</button>
-                            </form>
-                        </div>
-                    </article>
-
-                    <!-- Producto 2: Velas -->
-                    <article class="product-card fade-in">
-                        <div class="product-card__visual">
-                            <svg class="product-card__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="38" y="48" width="24" height="30" rx="4" stroke="currentColor" stroke-width="1.2" fill="none"/>
-                                <ellipse cx="50" cy="44" rx="10" ry="6" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
-                                <path d="M50 16 Q48 22 47 30 Q46 36 48 42" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
-                                <path d="M48 16 L50 8 L52 16" stroke="currentColor" stroke-width="0.8" opacity="0.5" fill="none"/>
-                                <circle cx="50" cy="10" r="3" fill="currentColor" opacity="0.4"/>
-                            </svg>
-                        </div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name" data-translate="product2_name">Velas de Ceras Vegetales</h3>
-                            <p class="product-card__desc" data-translate="product2_desc">Moldeadas a mano con ceras 100% vegetales y aromas botánicos. Sin parafinas ni aditivos sintéticos.</p>
-                            <p class="product-card__price">32 €</p>
-                            <form class="paypal-buy-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                                <input type="hidden" name="cmd" value="_xclick">
-                                <input type="hidden" name="business" value="alxrych@gmail.com">
-                                <input type="hidden" name="item_name" value="Velas de Ceras Vegetales">
-                                <input type="hidden" name="amount" value="32">
-                                <input type="hidden" name="currency_code" value="EUR">
-                                <button type="submit" class="btn btn--buy" data-translate="buy_button">Comprar</button>
-                            </form>
-                        </div>
-                    </article>
-
-                    <!-- Producto 3: Cerámica -->
-                    <article class="product-card fade-in">
-                        <div class="product-card__visual">
-                            <svg class="product-card__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30 70 Q30 30 50 22 Q70 30 70 70" stroke="currentColor" stroke-width="1.2" fill="none"/>
-                                <ellipse cx="50" cy="22" rx="20" ry="5" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
-                                <path d="M36 70 Q50 80 64 70" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.4"/>
-                                <path d="M28 54 Q50 64 72 54" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.3"/>
-                            </svg>
-                        </div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name" data-translate="product3_name">Macetas de Cerámica de Arroz</h3>
-                            <p class="product-card__desc" data-translate="product3_desc">Artesanales, increíblemente ligeras, inspiradas en formas orgánicas. Cada pieza es irrepetible.</p>
-                            <p class="product-card__price">58 €</p>
-                            <form class="paypal-buy-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                                <input type="hidden" name="cmd" value="_xclick">
-                                <input type="hidden" name="business" value="alxrych@gmail.com">
-                                <input type="hidden" name="item_name" value="Macetas de Cerámica de Arroz">
-                                <input type="hidden" name="amount" value="58">
-                                <input type="hidden" name="currency_code" value="EUR">
-                                <button type="submit" class="btn btn--buy" data-translate="buy_button">Comprar</button>
-                            </form>
-                        </div>
-                    </article>
-
-                    <!-- Producto 4: Kokedama -->
-                    <article class="product-card fade-in">
-                        <div class="product-card__visual">
-                            <svg class="product-card__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="50" cy="52" r="22" stroke="currentColor" stroke-width="1.2" fill="none"/>
-                                <path d="M50 30 Q44 16 38 12" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
-                                <path d="M50 30 Q56 14 64 10" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
-                                <path d="M50 30 Q50 18 49 8" stroke="currentColor" stroke-width="0.9" fill="none" opacity="0.45"/>
-                                <ellipse cx="38" cy="11" rx="6" ry="3" transform="rotate(-30 38 11)" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.55"/>
-                                <ellipse cx="64" cy="9" rx="5" ry="2.5" transform="rotate(25 64 9)" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.5"/>
-                                <ellipse cx="49" cy="7" rx="5" ry="2.5" transform="rotate(-5 49 7)" stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.5"/>
-                            </svg>
-                        </div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name" data-translate="product4_name">Kokedama</h3>
-                            <p class="product-card__desc" data-translate="product4_desc">Plantas aéreas esculpidas sobre bolas de musgo. Esculturas vivas que purifican y embellecen.</p>
-                            <p class="product-card__price">38 €</p>
-                            <form class="paypal-buy-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                                <input type="hidden" name="cmd" value="_xclick">
-                                <input type="hidden" name="business" value="alxrych@gmail.com">
-                                <input type="hidden" name="item_name" value="Kokedama">
-                                <input type="hidden" name="amount" value="38">
-                                <input type="hidden" name="currency_code" value="EUR">
-                                <button type="submit" class="btn btn--buy" data-translate="buy_button">Comprar</button>
-                            </form>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- --- CONTACTO --- -->
-        <section class="section contact" id="contacto">
-            <div class="container">
-                <span class="section__label" data-translate="contact_label">Contacto</span>
-                <h2 class="section__title" data-translate="contact_title">Hablemos</h2>
-                <p class="section__body contact__intro" data-translate="contact_intro">¿Tienes un proyecto en mente? ¿Necesitas una pieza personalizada? Escríbenos y te responderemos en menos de 48 horas.</p>
-                <form id="contact-form" class="contact-form" novalidate>
-                    <div class="contact-form__field">
-                        <label for="contact-name" class="contact-form__label" data-translate="form_name">Nombre</label>
-                        <input type="text" id="contact-name" name="name" class="contact-form__input" placeholder="Tu nombre" required autocomplete="name">
-                    </div>
-                    <div class="contact-form__field">
-                        <label for="contact-email" class="contact-form__label" data-translate="form_email">Email</label>
-                        <input type="email" id="contact-email" name="email" class="contact-form__input" placeholder="tu@email.com" required autocomplete="email">
-                    </div>
-                    <div class="contact-form__field contact-form__field--full">
-                        <label for="contact-message" class="contact-form__label" data-translate="form_message">Mensaje</label>
-                        <textarea id="contact-message" name="message" class="contact-form__textarea" rows="5" placeholder="Cuéntanos sobre tu proyecto o consulta..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary contact-form__submit" data-translate="form_send">
-                        Enviar mensaje
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                    </button>
-                    <p class="contact-form__note" data-translate="form_note">Al enviar, se abrirá tu aplicación de correo predeterminada con los datos del formulario.</p>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer" id="footer">
-        <div class="footer__inner container">
-            <div class="footer__brand">
-                <p class="footer__logo">LLAR STUDIO</p>
-                <p class="footer__tagline">Shaped by Nature</p>
-            </div>
-            <div class="footer__links">
-                <button type="button" class="footer__link" id="btn-legal-aviso" data-translate="legal_aviso">Aviso Legal</button>
-                <button type="button" class="footer__link" id="btn-legal-privacidad" data-translate="legal_privacy">Política de Privacidad</button>
-                <button type="button" class="footer__link" id="btn-legal-cookies" data-translate="legal_cookies">Política de Cookies</button>
-                <button type="button" class="footer__link" id="btn-legal-terminos" data-translate="legal_terms">Términos y Condiciones</button>
-            </div>
-            <div class="footer__bottom">
-                <p class="footer__copy">&copy; <span id="current-year"></span> LLAR STUDIO. <span data-translate="rights">Todos los derechos reservados.</span></p>
-                <p class="footer__credits" data-translate="footer_credits">Diseño biofílico & decoración sostenible · Hecho con cuidado artesanal</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ==================== MODALES LEGALES ==================== -->
-    <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
-        <div class="modal" id="modal-legal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-            <div class="modal__header">
-                <h3 class="modal__title" id="modal-title"></h3>
-                <button class="modal__close" id="modal-close" aria-label="Cerrar ventana">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                </button>
-            </div>
-            <div class="modal__body" id="modal-body"></div>
-        </div>
-    </div>
-
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
