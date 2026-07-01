@@ -18,9 +18,7 @@
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            LLAR STUDIO · Original Minimalist Watercolors & Biophilic Art
-        </title>
+        <title>LLAR STUDIO · Original Minimalist Watercolors</title>
         <meta
             name="description"
             content="A nature-inspired art studio creating abstract paintings. Original, handcrafted minimalist watercolors made with natural pigments on recycled paper."
@@ -64,7 +62,6 @@
         <section class="hero" aria-labelledby="hero-heading">
             <!-- Contenedor del slideshow -->
             <div class="hero__slideshow" id="hero-slideshow" aria-hidden="true">
-                <!-- Las imágenes se cargan desde JavaScript, pero dejamos una base -->
                 <div class="hero__slide active">
                     <img
                         src="images/1.jpg"
@@ -140,81 +137,85 @@
             aria-labelledby="gallery-heading"
         >
             <header class="gallery-section__header">
-                <span class="section-eyebrow">Recent works</span>
+                <span class="section-eyebrow">Available works</span>
                 <h2 class="display-xl" id="gallery-heading">Gallery</h2>
             </header>
             <div class="gallery-grid">
                 <button
                     class="gallery-grid__item gallery-grid__item--tall"
                     data-reveal
-                    aria-label="Ampliar Estudio botánico I"
+                    aria-label="Abstract watercolor painting"
                 >
                     <img
-                        src="https://picsum.photos/id/15/600/800"
-                        alt="Rama de eucalipto en acuarela"
+                        src="images/work2.jpg"
+                        alt="Abstract watercolor painting"
                         loading="lazy"
                     />
-                    <span class="gallery-grid__label">Botánico I</span>
+                    <span class="gallery-grid__label">Shade</span>
                 </button>
                 <button
                     class="gallery-grid__item gallery-grid__item--wide"
                     data-reveal
-                    aria-label="Ampliar Horizonte"
+                    aria-label="Abstract watercolor painting"
                 >
                     <img
-                        src="https://picsum.photos/id/28/800/500"
-                        alt="Paisaje de líneas de horizonte diluidas"
+                        src="images/work1.jpg"
+                        alt="Abstract watercolor painting"
                         loading="lazy"
                     />
-                    <span class="gallery-grid__label">Horizonte</span>
+                    <span class="gallery-grid__label">Follow the path</span>
                 </button>
                 <button
                     class="gallery-grid__item"
                     data-reveal
-                    aria-label="Ampliar Flor I"
+                    aria-label="Abstract watercolor painting"
                 >
                     <img
-                        src="https://picsum.photos/id/36/600/600"
-                        alt="Detalle floral monocromático"
+                        src="images/work3.jpg"
+                        alt="Abstract watercolor painting"
                         loading="lazy"
                     />
-                    <span class="gallery-grid__label">Flor I</span>
+                    <span class="gallery-grid__label">Dawning</span>
                 </button>
                 <button
                     class="gallery-grid__item gallery-grid__item--tall-wide"
                     data-reveal
-                    aria-label="Ampliar Veladuras"
+                    aria-label="Abstract watercolor painting"
                 >
                     <img
-                        src="https://picsum.photos/id/54/1000/800"
-                        alt="Composición de veladuras superpuestas"
+                        src="images/work5.jpg"
+                        alt="Abstract watercolor painting"
                         loading="lazy"
                     />
-                    <span class="gallery-grid__label">Veladuras</span>
+                    <span class="gallery-grid__label"
+                        >Whispers of the ocean</span
+                    >
                 </button>
                 <button
                     class="gallery-grid__item"
                     data-reveal
-                    aria-label="Ampliar Niebla"
+                    aria-label="Abstract watercolor painting"
                 >
                     <img
-                        src="https://picsum.photos/id/10/600/600"
-                        alt="Bosque en niebla — grises diluidos"
+                        src="images/work4.jpg"
+                        alt="Abstract watercolor painting"
                         loading="lazy"
                     />
-                    <span class="gallery-grid__label">Niebla</span>
+                    <span class="gallery-grid__label">Mistwalker</span>
                 </button>
                 <button
                     class="gallery-grid__item gallery-grid__item--tall"
                     data-reveal
-                    aria-label="Ampliar Botánico II"
+                    aria-label="Abstract watercolor painting"
                 >
                     <img
-                        src="https://picsum.photos/id/48/600/800"
-                        alt="Estudio de hoja sobre papel"
+                        src="images/work6.jpg"
+                        alt="Abstract watercolor painting"
                         loading="lazy"
                     />
-                    <span class="gallery-grid__label">Botánico II</span>
+                    <span class="gallery-grid__label"
+                        >Sun is shining somewhere</span
+                    >
                 </button>
             </div>
         </section>
@@ -290,11 +291,15 @@
             aria-labelledby="contact-heading"
         >
             <header class="contact-section__header">
-                <span class="section-eyebrow">Contacto</span>
-                <h2 class="display-lg" id="contact-heading">Hablemos</h2>
+                <span class="section-eyebrow">Contact</span>
+                <h2 class="display-lg" id="contact-heading">Let's talk</h2>
                 <p class="body-lg" style="margin-top: var(--spacing-xs)">
-                    Para consultas sobre obra disponible, encargos o
-                    colaboraciones.
+                    I'd love to hear from you.<br />
+                    Whether you're interested in an original watercolor, a
+                    commissioned piece, or simply have a question about my work,
+                    feel free to get in touch.<br />
+                    I look forward to hearing your ideas and creating something
+                    meaningful together.
                 </p>
             </header>
             <form
@@ -308,43 +313,41 @@
                 <input type="hidden" name="_template" value="box" />
                 <input type="hidden" name="_next" value="#" />
                 <div class="contact-form__field">
-                    <label class="contact-form__label" for="name">Nombre</label>
+                    <label class="contact-form__label" for="name">Name</label>
                     <input
                         class="contact-form__input"
                         type="text"
                         id="name"
                         name="name"
                         required
-                        placeholder="Tu nombre"
+                        placeholder="Your name"
                     />
                 </div>
                 <div class="contact-form__field">
-                    <label class="contact-form__label" for="email"
-                        >Correo electrónico</label
-                    >
+                    <label class="contact-form__label" for="email">Email</label>
                     <input
                         class="contact-form__input"
                         type="email"
                         id="email"
                         name="email"
                         required
-                        placeholder="tu@email.com"
+                        placeholder="your@email.com"
                     />
                 </div>
                 <div class="contact-form__field">
                     <label class="contact-form__label" for="message"
-                        >Mensaje</label
+                        >Message</label
                     >
                     <textarea
                         class="contact-form__textarea"
                         id="message"
                         name="message"
                         required
-                        placeholder="Cuéntame qué tienes en mente..."
+                        placeholder="I'd love to hear what you have in mind..."
                     ></textarea>
                 </div>
                 <button class="contact-form__button" type="submit">
-                    Enviar mensaje
+                    Submit
                 </button>
                 <div
                     class="contact-form__feedback"
@@ -357,14 +360,14 @@
         <!-- FOOTER -->
         <footer class="footer">
             <p class="footer__copyright">
-                © 2026 LLAR STUDIO — Todos los derechos reservados
+                © 2026 LLAR STUDIO — All rights reserved.
             </p>
             <a
                 href="https://www.instagram.com/llar.art.studio/"
                 class="footer__instagram"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram de Elena Soler"
+                aria-label="Instagram LLAR STUDIO"
             >
                 <svg
                     viewBox="0 0 24 24"
